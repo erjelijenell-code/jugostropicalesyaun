@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO On-Page -->
+    <title>Jugos Tropicales Yaun | Venta de Jugos Naturales en Facatativá</title>
+    <meta name="description" content="Refresca tu día con Jugos Tropicales Yaun en Facatativá. Ofrecemos jugos 100% naturales, preparados al instante con las mejores frutas. Pide ahora.">
+    <meta name="keywords" content="jugos tropicales, jugos naturales, venta de jugos Facatativá, bebidas refrescantes, Jugos Tropicales Yaun">
+    <link rel="canonical" href="index.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO Off-Page / Open Graph -->
+    <meta property="og:title" content="Jugos Tropicales Yaun | Frescura en Cada Sorbo">
+    <meta property="og:description" content="Los mejores jugos naturales de Facatativá. Preparados al instante con frutas seleccionadas.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        /* Variables de color y fuentes */
+        :root {
+            --primary: #f97316; /* Naranja tropical */
+            --primary-dark: #ea580c;
+            --secondary: #16a34a; /* Verde frescura */
+            --bg-light: #fffbeb; /* Crema suave */
+            --text-dark: #334155;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .header-contact {
+            font-weight: 600;
+            color: var(--text-dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Botones */
+        .btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 32px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(249, 115, 22, 0.3);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(22, 163, 74, 0.8), rgba(22, 163, 74, 0.9)), url('https://via.placeholder.com/1920x1080/16a34a/ffffff?text=Frutas+Tropicales') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Secciones Generales */
+        .section {
+            padding: 80px 5%;
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        /* Grillas */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tarjetas */
+        .card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        /* Formulario y Empresa */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .info-panel, .form-panel {
+            flex: 1;
+            min-width: 300px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .info-list strong {
+            color: var(--secondary);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Controles de Formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: #bbf7d0;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .header-contact { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🍍 Jugos <span>Yaun</span></a>
+        <a href="tel:+573110987867" class="header-contact">Llámanos: 311 098 7867</a>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Refresca tu Día con Jugos Tropicales 100% Naturales</h1>
+            <p>Disfruta del auténtico sabor de la fruta en Facatativá. Preparados al instante, sin conservantes y con la mejor calidad para acompañar tu rutina diaria.</p>
+            <a href="#pedido" class="btn">Pide Tus Jugos Frescos Ahora</a>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="section bg-white">
+            <div class="section-header">
+                <h2 class="section-title">¿Por Qué Elegir Jugos Yaun?</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Fruta Seleccionada</h3>
+                    <p>Utilizamos únicamente frutas frescas y de la más alta calidad, asegurando un sabor natural y un alto aporte nutricional en cada vaso.</p>
+                </div>
+                <div class="card">
+                    <h3>Preparación al Instante</h3>
+                    <p>No almacenamos jugos procesados. Tu bebida se prepara justo en el momento en que realizas tu pedido para garantizar su frescura.</p>
+                </div>
+                <div class="card">
+                    <h3>Higiene Garantizada</h3>
+                    <p>Mantenemos estrictos estándares de limpieza en la manipulación de nuestros alimentos para tu total tranquilidad y seguridad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Propuesta de Valor / Menú -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Especialidades</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="border-bottom-color: var(--secondary);">
+                    <h3 style="color: var(--secondary);">Tradicionales</h3>
+                    <p>Los clásicos que nunca fallan: Mango, Mora, Lulo, Maracuyá y Guayaba. Perfectos para acompañar tus comidas.</p>
+                </div>
+                <div class="card" style="border-bottom-color: var(--secondary);">
+                    <h3 style="color: var(--secondary);">Combinaciones Exóticas</h3>
+                    <p>Atrévete a probar nuestras mezclas tropicales exclusivas que refrescarán tu paladar y te llenarán de energía.</p>
+                </div>
+                <div class="card" style="border-bottom-color: var(--secondary);">
+                    <h3 style="color: var(--secondary);">Jugos Funcionales</h3>
+                    <p>Opciones pensadas en tu bienestar: batidos verdes, mezclas antioxidantes y jugos para iniciar el día con fuerza.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prueba Social -->
+        <section class="section bg-white">
+            <div class="section-header">
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="background: #f8fafc; border: none; text-align: left;">
+                    <p><em>"Los jugos son deliciosos, se nota que la fruta es fresca y no abusan del azúcar. La atención en Facatativá es súper rápida."</em></p>
+                    <p style="margin-top: 15px; font-weight: bold; color: var(--primary);">— Cliente Local</p>
+                </div>
+                <div class="card" style="background: #f8fafc; border: none; text-align: left;">
+                    <p><em>"Excelente servicio. Pedí un jugo de lulo y uno de maracuyá y estaban perfectos. Muy recomendados para refrescar la tarde."</em></p>
+                    <p style="margin-top: 15px; font-weight: bold; color: var(--primary);">— Comprador Frecuente</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario e Información -->
+        <section class="section" id="pedido">
+            <div class="section-header">
+                <h2 class="section-title">Haz tu Pedido o Contáctanos</h2>
+                <p>Déjanos tus datos y qué jugos deseas, te confirmaremos la preparación de inmediato.</p>
+            </div>
+            
+            <div class="content-wrapper">
+                <!-- Información -->
+                <div class="info-panel">
+                    <h3 style="color: var(--secondary); margin-bottom: 20px;">Información del Negocio</h3>
+                    <ul class="info-list">
+                        <li><strong>Establecimiento:</strong> Jugos Tropicales Yaun</li>
+                        <li><strong>Responsable Legal:</strong> SIRLEY ANDREA ABLIC PINEDA DELGADILLO</li>
+                        <li><strong>Dirección:</strong> Cl. 1c Este #08-3, Facatativá, Colombia</li>
+                        <li><strong>Teléfono de Pedidos:</strong> 311 098 7867</li>
+                        <li><strong>Correo Electrónico:</strong> erjelijenell@gmail.com</li>
+                        <li><strong>Horario de Atención:</strong> Todos los días de 8:00 am a 5:00 pm</li>
+                    </ul>
+                </div>
+
+                <!-- Formulario -->
+                <div class="form-panel">
+                    <form id="formPedido">
+                        <div class="form-group">
+                            <label for="nombre">Tu Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Carlos Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono de Contacto *</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 311 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="pedido_detalle">¿Qué jugos deseas pedir? *</label>
+                            <textarea id="pedido_detalle" name="pedido_detalle" rows="4" required placeholder="Ej. Quisiera 2 jugos de mango y 1 de mora en agua..."></textarea>
+                        </div>
+                        <div style="margin-bottom: 20px; font-size: 0.85rem; color: #64748b;">
+                            <label>
+                                <input type="checkbox" required style="margin-right: 5px;">
+                                Acepto la <a href="politica-de-privacidad.html" style="color: var(--primary);">Política de Privacidad</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Confirmar Pedido</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jugos Tropicales Yaun. Operado por SIRLEY ANDREA ABLIC PINEDA DELGADILLO. Todos los derechos reservados.</p>
+        <div style="margin-top: 20px; font-size: 0.9rem;">
+            <a href="politica-de-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+        </div>
+    </footer>
+
+    <!-- Script Funcional del Formulario (UX) -->
+    <script>
+        document.getElementById('formPedido').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por preferir Jugos Tropicales Yaun! Hemos recibido tu solicitud. Nos pondremos en contacto contigo en breve para confirmar la entrega de tus jugos frescos.');
+            this.reset();
+        });
+    </script>
+
+    <!-- SEO Técnico: Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "Jugos Tropicales Yaun",
+      "image": "https://via.placeholder.com/800x600/16a34a/ffffff?text=Jugos+Tropicales",
+      "description": "Venta de jugos tropicales y naturales preparados al instante en Facatativá.",
+      "telephone": "+573110987867",
+      "email": "erjelijenell@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 1c Este #08-3",
+        "addressLocality": "Facatativá",
+        "addressCountry": "CO"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "SIRLEY ANDREA ABLIC PINEDA DELGADILLO"
+      }
+    }
+    </script>
+
+</body>
+</html>
