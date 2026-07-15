@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO On-Page -->
-    <title>Jugos Tropicales Yaun | Venta de Jugos Naturales en Facatativá</title>
-    <meta name="description" content="Refresca tu día con Jugos Tropicales Yaun en Facatativá. Ofrecemos jugos 100% naturales, preparados al instante con las mejores frutas. Pide ahora.">
-    <meta name="keywords" content="jugos tropicales, jugos naturales, venta de jugos Facatativá, bebidas refrescantes, Jugos Tropicales Yaun">
+    <title>Acueducto Local | Portal Informativo de Agua Potable</title>
+    <meta name="description" content="Portal meramente informativo sobre el servicio de acueducto, tratamiento y distribución de agua en Colombia.">
+    <meta name="keywords" content="acueducto, agua potable, información acueducto, servicios de agua, Colombia">
     <link rel="canonical" href="index.html">
     <meta name="robots" content="index, follow">
 
     <!-- SEO Off-Page / Open Graph -->
-    <meta property="og:title" content="Jugos Tropicales Yaun | Frescura en Cada Sorbo">
-    <meta property="og:description" content="Los mejores jugos naturales de Facatativá. Preparados al instante con frutas seleccionadas.">
+    <meta property="og:title" content="Acueducto Local | Información de Servicios">
+    <meta property="og:description" content="Sitio web informativo sobre la gestión y cuidado del agua potable.">
     <meta property="og:type" content="website">
     
     <style>
-        /* Variables de color y fuentes */
+        /* Variables de color y fuentes (Paleta de Agua/Acueducto) */
         :root {
-            --primary: #f97316; /* Naranja tropical */
-            --primary-dark: #ea580c;
-            --secondary: #16a34a; /* Verde frescura */
-            --bg-light: #fffbeb; /* Crema suave */
+            --primary: #0284c7; /* Azul agua */
+            --primary-dark: #0369a1;
+            --secondary: #0891b2; /* Azul verdoso / Cian */
+            --bg-light: #f0f9ff; /* Azul muy claro */
             --text-dark: #334155;
             --white: #ffffff;
+            --alert-bg: #fffbeb;
+            --alert-text: #b45309;
         }
 
         * {
@@ -38,6 +40,17 @@
             background-color: var(--bg-light);
             color: var(--text-dark);
             line-height: 1.6;
+        }
+
+        /* Aviso Informativo Superior */
+        .top-alert {
+            background-color: var(--alert-bg);
+            color: var(--alert-text);
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #fde68a;
         }
 
         /* Header */
@@ -85,13 +98,13 @@
             font-size: 1.1rem;
             font-weight: bold;
             border: none;
-            border-radius: 50px;
+            border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
             transition: background-color 0.3s ease, transform 0.2s ease;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(249, 115, 22, 0.3);
+            box-shadow: 0 4px 6px rgba(2, 132, 199, 0.3);
         }
 
         .btn:hover {
@@ -101,7 +114,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(22, 163, 74, 0.8), rgba(22, 163, 74, 0.9)), url('https://via.placeholder.com/1920x1080/16a34a/ffffff?text=Frutas+Tropicales') center/cover;
+            background: linear-gradient(rgba(2, 132, 199, 0.8), rgba(8, 145, 178, 0.9)), url('https://via.placeholder.com/1920x1080/0284c7/ffffff?text=Agua+Potable') center/cover;
             color: var(--white);
             text-align: center;
             padding: 100px 20px;
@@ -115,10 +128,20 @@
 
         .hero p {
             font-size: 1.2rem;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .hero-disclaimer {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 40px;
         }
 
         /* Secciones Generales */
@@ -154,7 +177,7 @@
         .card {
             background: var(--white);
             padding: 40px 30px;
-            border-radius: 12px;
+            border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             text-align: center;
             border-bottom: 4px solid var(--primary);
@@ -171,7 +194,7 @@
             margin-bottom: 15px;
         }
 
-        /* Formulario y Empresa */
+        /* Formulario e Información */
         .content-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -185,7 +208,7 @@
             min-width: 300px;
             background: var(--white);
             padding: 40px;
-            border-radius: 12px;
+            border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
 
@@ -221,26 +244,26 @@
             width: 100%;
             padding: 12px;
             border: 1px solid #cbd5e1;
-            border-radius: 8px;
+            border-radius: 5px;
             font-size: 1rem;
         }
 
         .form-group input:focus, .form-group textarea:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+            box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
         }
 
         /* Footer */
         footer {
-            background-color: var(--secondary);
+            background-color: #0f172a;
             color: var(--white);
             text-align: center;
             padding: 40px 20px;
         }
 
         footer a {
-            color: #bbf7d0;
+            color: #7dd3fc;
             text-decoration: none;
             margin: 0 15px;
         }
@@ -257,121 +280,133 @@
 </head>
 <body>
 
+    <!-- Aviso general -->
+    <div class="top-alert">
+        ⚠️ AVISO: Este portal es MERAMENTE INFORMATIVO y no está vinculado a plataformas de pago ni es un canal transaccional oficial.
+    </div>
+
     <header>
-        <a href="index.html" class="logo">🍍 Jugos <span>Yaun</span></a>
-        <a href="tel:+573110987867" class="header-contact">Llámanos: 311 098 7867</a>
+        <a href="index.html" class="logo">💧 Acueducto <span>Info Colombia</span></a>
+        <a href="#contacto" class="header-contact">Atención al Usuario: 01 8000 000 000</a>
     </header>
 
     <main>
         <!-- Hero -->
         <section class="hero">
-            <h1>Refresca tu Día con Jugos Tropicales 100% Naturales</h1>
-            <p>Disfruta del auténtico sabor de la fruta en Facatativá. Preparados al instante, sin conservantes y con la mejor calidad para acompañar tu rutina diaria.</p>
-            <a href="#pedido" class="btn">Pide Tus Jugos Frescos Ahora</a>
+            <h1>Información General sobre el Servicio de Acueducto</h1>
+            <p>Conoce los procesos de tratamiento, distribución y cuidado del recurso hídrico en Colombia. Orientación ciudadana al alcance de todos.</p>
+            <div class="hero-disclaimer">
+                <em>Portal de consulta informativa. No se procesan pagos ni trámites legales por este medio.</em>
+            </div><br>
+            <a href="#contacto" class="btn">Contáctanos para Consultas Generales</a>
         </section>
 
-        <!-- Beneficios -->
+        <!-- Etapas del Proceso -->
         <section class="section bg-white">
             <div class="section-header">
-                <h2 class="section-title">¿Por Qué Elegir Jugos Yaun?</h2>
+                <h2 class="section-title">El Ciclo de Nuestro Servicio</h2>
+                <p>Información básica sobre cómo llega el agua hasta los hogares.</p>
             </div>
             <div class="grid-3">
                 <div class="card">
-                    <h3>Fruta Seleccionada</h3>
-                    <p>Utilizamos únicamente frutas frescas y de la más alta calidad, asegurando un sabor natural y un alto aporte nutricional en cada vaso.</p>
+                    <h3>Captación</h3>
+                    <p>El proceso inicia con la recolección de agua cruda desde fuentes hídricas autorizadas, asegurando la sostenibilidad ambiental de los ecosistemas.</p>
                 </div>
                 <div class="card">
-                    <h3>Preparación al Instante</h3>
-                    <p>No almacenamos jugos procesados. Tu bebida se prepara justo en el momento en que realizas tu pedido para garantizar su frescura.</p>
+                    <h3>Tratamiento</h3>
+                    <p>El agua pasa por procesos de desarenado, coagulación, filtración y desinfección en plantas especializadas para hacerla apta para el consumo humano.</p>
                 </div>
                 <div class="card">
-                    <h3>Higiene Garantizada</h3>
-                    <p>Mantenemos estrictos estándares de limpieza en la manipulación de nuestros alimentos para tu total tranquilidad y seguridad.</p>
+                    <h3>Distribución</h3>
+                    <p>A través de una amplia red de tuberías monitoreadas, el agua potable es llevada hasta las redes matrices y posteriormente a cada domicilio.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Propuesta de Valor / Menú -->
+        <!-- Cultura Ciudadana / Servicios -->
         <section class="section">
             <div class="section-header">
-                <h2 class="section-title">Nuestras Especialidades</h2>
+                <h2 class="section-title">Cultura del Agua e Información</h2>
             </div>
             <div class="grid-3">
                 <div class="card" style="border-bottom-color: var(--secondary);">
-                    <h3 style="color: var(--secondary);">Tradicionales</h3>
-                    <p>Los clásicos que nunca fallan: Mango, Mora, Lulo, Maracuyá y Guayaba. Perfectos para acompañar tus comidas.</p>
+                    <h3 style="color: var(--secondary);">Uso Racional</h3>
+                    <p>Recomendaciones para el ahorro de agua en el hogar: reparación de fugas, uso de sanitarios de bajo consumo y duchas cortas.</p>
                 </div>
                 <div class="card" style="border-bottom-color: var(--secondary);">
-                    <h3 style="color: var(--secondary);">Combinaciones Exóticas</h3>
-                    <p>Atrévete a probar nuestras mezclas tropicales exclusivas que refrescarán tu paladar y te llenarán de energía.</p>
+                    <h3 style="color: var(--secondary);">Mantenimiento</h3>
+                    <p>Información sobre cómo mantener limpios los tanques de reserva residenciales para preservar la calidad del agua que llega de la red.</p>
                 </div>
                 <div class="card" style="border-bottom-color: var(--secondary);">
-                    <h3 style="color: var(--secondary);">Jugos Funcionales</h3>
-                    <p>Opciones pensadas en tu bienestar: batidos verdes, mezclas antioxidantes y jugos para iniciar el día con fuerza.</p>
+                    <h3 style="color: var(--secondary);">Reporte de Daños</h3>
+                    <p>Conoce las líneas de atención a nivel nacional y local para reportar tubos rotos o interrupciones imprevistas en el suministro.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Prueba Social -->
+        <!-- Avisos Importantes -->
         <section class="section bg-white">
             <div class="section-header">
-                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                <h2 class="section-title">Avisos y Boletines Comunes</h2>
+                <p>Ejemplos de información pública compartida a la ciudadanía.</p>
             </div>
             <div class="grid-3">
-                <div class="card" style="background: #f8fafc; border: none; text-align: left;">
-                    <p><em>"Los jugos son deliciosos, se nota que la fruta es fresca y no abusan del azúcar. La atención en Facatativá es súper rápida."</em></p>
-                    <p style="margin-top: 15px; font-weight: bold; color: var(--primary);">— Cliente Local</p>
+                <div class="card" style="background: #f8fafc; border: none; text-align: left; border-left: 4px solid var(--primary);">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Cortes Programados</h4>
+                    <p><em>"Se informa a la comunidad que por lavados de la red matriz, pueden presentarse bajas presiones o suspensiones temporales en ciertos sectores."</em></p>
                 </div>
-                <div class="card" style="background: #f8fafc; border: none; text-align: left;">
-                    <p><em>"Excelente servicio. Pedí un jugo de lulo y uno de maracuyá y estaban perfectos. Muy recomendados para refrescar la tarde."</em></p>
-                    <p style="margin-top: 15px; font-weight: bold; color: var(--primary);">— Comprador Frecuente</p>
+                <div class="card" style="background: #f8fafc; border: none; text-align: left; border-left: 4px solid var(--secondary);">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Calidad del Agua</h4>
+                    <p><em>"Los índices de riesgo de calidad del agua (IRCA) se mantienen en niveles óptimos, certificando el líquido como apto para consumo directo."</em></p>
                 </div>
             </div>
         </section>
 
         <!-- Formulario e Información -->
-        <section class="section" id="pedido">
+        <section class="section" id="contacto">
             <div class="section-header">
-                <h2 class="section-title">Haz tu Pedido o Contáctanos</h2>
-                <p>Déjanos tus datos y qué jugos deseas, te confirmaremos la preparación de inmediato.</p>
+                <h2 class="section-title">Buzón de Consultas Informativas</h2>
+                <p>Envíanos tus dudas sobre el servicio. Reiteramos que <strong>este formulario no genera radicados oficiales, PQR legales, ni procesa facturación</strong>.</p>
             </div>
             
             <div class="content-wrapper">
                 <!-- Información -->
                 <div class="info-panel">
-                    <h3 style="color: var(--secondary); margin-bottom: 20px;">Información del Negocio</h3>
+                    <h3 style="color: var(--secondary); margin-bottom: 20px;">Información de Contacto</h3>
                     <ul class="info-list">
-                        <li><strong>Establecimiento:</strong> Jugos Tropicales Yaun</li>
-                        <li><strong>Responsable Legal:</strong> SIRLEY ANDREA ABLIC PINEDA DELGADILLO</li>
-                        <li><strong>Dirección:</strong> Cl. 1c Este #08-3, Facatativá, Colombia</li>
-                        <li><strong>Teléfono de Pedidos:</strong> 311 098 7867</li>
-                        <li><strong>Correo Electrónico:</strong> erjelijenell@gmail.com</li>
-                        <li><strong>Horario de Atención:</strong> Todos los días de 8:00 am a 5:00 pm</li>
+                        <li><strong>Plataforma:</strong> Acueducto Info Colombia (Portal Meramente Informativo)</li>
+                        <li><strong>Sede de Información:</strong> Bogotá, Colombia (Atención Nacional)</li>
+                        <li><strong>Línea de Orientación:</strong> 01 8000 000 000</li>
+                        <li><strong>Correo Informativo:</strong> info@acueducto-informacion.co.placeholder</li>
+                        <li><strong>Horario de Orientación:</strong> Lunes a Viernes de 8:00 am a 5:00 pm</li>
                     </ul>
+                    <div style="margin-top: 20px; padding: 15px; background-color: var(--alert-bg); color: var(--alert-text); border-radius: 5px; font-size: 0.9rem;">
+                        <strong>Importante:</strong> Para quejas formales o pago de recibos, por favor diríjase a la página oficial de la empresa prestadora de servicios públicos de su municipio.
+                    </div>
                 </div>
 
                 <!-- Formulario -->
                 <div class="form-panel">
-                    <form id="formPedido">
+                    <form id="formContacto">
                         <div class="form-group">
-                            <label for="nombre">Tu Nombre *</label>
+                            <label for="nombre">Nombre Completo</label>
                             <input type="text" id="nombre" name="nombre" required placeholder="Ej. Carlos Pérez">
                         </div>
                         <div class="form-group">
-                            <label for="telefono">Teléfono de Contacto *</label>
-                            <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 311 000 0000">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="Ej. correo@ejemplo.com">
                         </div>
                         <div class="form-group">
-                            <label for="pedido_detalle">¿Qué jugos deseas pedir? *</label>
-                            <textarea id="pedido_detalle" name="pedido_detalle" rows="4" required placeholder="Ej. Quisiera 2 jugos de mango y 1 de mora en agua..."></textarea>
+                            <label for="consulta">¿En qué podemos orientarte?</label>
+                            <textarea id="consulta" name="consulta" rows="4" required placeholder="Escribe aquí tu consulta informativa..."></textarea>
                         </div>
                         <div style="margin-bottom: 20px; font-size: 0.85rem; color: #64748b;">
                             <label>
                                 <input type="checkbox" required style="margin-right: 5px;">
-                                Acepto la <a href="politica-de-privacidad.html" style="color: var(--primary);">Política de Privacidad</a>
+                                Comprendo que este es un sitio informativo y acepto la <a href="politica-de-privacidad.html" style="color: var(--primary);">Política de Privacidad</a>
                             </label>
                         </div>
-                        <button type="submit" class="btn" style="width: 100%;">Confirmar Pedido</button>
+                        <button type="submit" class="btn" style="width: 100%;">Enviar Consulta General</button>
                     </form>
                 </div>
             </div>
@@ -379,7 +414,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Jugos Tropicales Yaun. Operado por SIRLEY ANDREA ABLIC PINEDA DELGADILLO. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Portal Informativo de Acueducto Colombia. Sitio sin fines de lucro ni transaccionales.</p>
         <div style="margin-top: 20px; font-size: 0.9rem;">
             <a href="politica-de-privacidad.html">Política de Privacidad</a>
             <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
@@ -388,41 +423,21 @@
 
     <!-- Script Funcional del Formulario (UX) -->
     <script>
-        document.getElementById('formPedido').addEventListener('submit', function(e) {
+        document.getElementById('formContacto').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('¡Gracias por preferir Jugos Tropicales Yaun! Hemos recibido tu solicitud. Nos pondremos en contacto contigo en breve para confirmar la entrega de tus jugos frescos.');
+            alert('Hemos recibido su mensaje. Le recordamos que esta plataforma es únicamente informativa. Le responderemos con la orientación correspondiente a su correo electrónico en breve.');
             this.reset();
         });
     </script>
 
-    <!-- SEO Técnico: Schema.org LocalBusiness -->
+    <!-- SEO Técnico: Schema.org GovernmentOrganization / Informational -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FoodEstablishment",
-      "name": "Jugos Tropicales Yaun",
-      "image": "https://via.placeholder.com/800x600/16a34a/ffffff?text=Jugos+Tropicales",
-      "description": "Venta de jugos tropicales y naturales preparados al instante en Facatativá.",
-      "telephone": "+573110987867",
-      "email": "erjelijenell@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Cl. 1c Este #08-3",
-        "addressLocality": "Facatativá",
-        "addressCountry": "CO"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "SIRLEY ANDREA ABLIC PINEDA DELGADILLO"
-      }
+      "@type": "WebSite",
+      "name": "Acueducto Info Colombia",
+      "description": "Portal meramente informativo sobre procesos y cultura del agua en Colombia. No es un sitio transaccional.",
+      "url": "https://tusitio-informativo-acueducto.com"
     }
     </script>
 
